@@ -1,0 +1,139 @@
+/****************************************************************
+GENERAL
+****************************************************************/
+body {
+	max-width: 100%;
+}
+.wrapper {
+	max-width: 100%;
+}
+
+
+/****************************************************************
+LOGO
+****************************************************************/
+
+
+div img {
+	box-sizing: border-box;
+	width: 40%;
+	margin: 0 30%;
+	margin-top: 2em;
+	padding: .2em;
+	/*border: 10px solid hsla(153, 43%, 42%, 1);
+	border-radius: 50%;*/
+}
+
+
+/****************************************************************
+TITLE
+****************************************************************/
+
+.title {
+	font-family: 'Droid Sans', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	color: #585858;
+	font-size: 6vw;
+	margin-top: -2%;
+	display: block;
+}
+
+.title:hover span {
+	display: none;
+	
+}
+
+.title:hover:before {
+	content: "Austin G. Davis-Richardson";
+	color: tomato;
+}
+
+
+/****************************************************************
+NAVIGATION
+****************************************************************/
+
+nav {
+	max-width: 100%;
+	margin-top: -3%;
+}
+
+nav ul {
+	font-family: 'Open Sans', sans-serif;
+	/*list-style: none;*/
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+ul li {
+	line-height: 1.75;
+	font-size: 4.4vw;
+}
+
+ul li a {
+	color: #B8B8B8;
+	text-decoration: none;
+}
+/*
+i.fa.fa-leaf.fa-lg:hover {
+	display: none;
+}
+
+
+i.fa.fa-leaf.fa-lg:hover:before {
+	content: "scholar";
+	font-size: 1vw;
+
+}*/
+
+ul li a:hover {
+	color: tomato;
+}
+
+@media screen and (min-width: 480px) {
+	div img {
+		width: 30%;
+		margin: 0 35%;
+	}
+
+	.title {
+		font-size: 5vw;
+	}
+
+	nav ul li {
+		display: inline;
+		margin-right: 10px;
+		font-size: 3.2vw;
+	}
+
+	nav ul{
+		width: 50%;
+		margin: 0 25%;
+	}
+}
+
+@media screen and (min-width: 660px) {
+	div img {
+		width: 20%;
+		margin: 0 40%;
+	}
+
+	.title {
+		font-size: 4vw;
+	}
+
+	nav ul li {
+		
+		font-size: 2vw;
+	}
+
+	nav ul {
+		width: 40%;
+		margin: 0 30%;
+	}
+
+
+}
+
