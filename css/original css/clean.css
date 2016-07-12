@@ -1,0 +1,152 @@
+/****************************************************************
+GENERAL
+****************************************************************/
+body {
+	max-width: 100%;
+	-webkit-perspective: 800px;
+}
+.wrapper {
+	max-width: 100%;
+}
+
+
+/****************************************************************
+LOGO
+****************************************************************/
+
+
+div img {
+	box-sizing: border-box;
+	width: 40%;
+	margin: 0 30%;
+	margin-top: 2em;
+	padding: .2em;
+	-webkit-transition: -webkit-transform 2s linear;
+	-webkit-transform-style: preserve-3d;
+}
+
+
+/****************************************************************
+TITLE
+****************************************************************/
+
+.title {
+	font-family: 'Inconsolata', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	color: #585858;
+	font-size: 6vw;
+	margin-top: -2%;
+	display: block;
+}
+
+.title:hover span {
+	display: none;
+	
+}
+
+.title:hover:before {
+	content: "Austin G. Davis-Richardson";
+	color: tomato;
+}
+
+div img:hover {
+	-webkit-transform: rotateY(1turn);
+}
+
+
+/****************************************************************
+NAVIGATION
+****************************************************************/
+
+nav {
+	max-width: 100%;
+	margin-top: -3%;
+}
+
+nav ul {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+ul li {
+	line-height: 1.75;
+	font-size: 4.4vw;
+}
+
+ul li a {
+	color: #B8B8B8;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	color: tomato;
+}
+
+
+@media screen and (min-width: 480px) {
+	div img {
+		width: 30%;
+		margin: 0 35%;
+	}
+
+	.title {
+		font-size: 5vw;
+	}
+
+	nav ul li {
+		display: inline;
+		margin-right: 10px;
+		font-size: 3.2vw;
+	}
+
+	nav ul{
+		width: 50%;
+		margin: 0 25%;
+	}
+
+	.dot {
+		color: #B8B8B8;
+		padding-left: 2.02%;
+	}
+}
+
+@media screen and (min-width: 660px) {
+	div img {
+		width: 20%;
+		margin: 0 40%;
+	}
+
+	.title {
+		font-size: 4vw;
+	}
+
+	.title:hover {
+		word-spacing: -20px;
+	}
+
+	nav ul li {
+		
+		font-size: 1.5vw;
+	}
+
+	nav ul {
+		width: 40%;
+		margin: 0 30%;
+	}
+
+	.dot {
+		color: #B8B8B8;
+		padding-left: 2.02%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.dot {
+		visibility: hidden;
+	}
+}

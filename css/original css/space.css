@@ -1,0 +1,29 @@
+html {
+	width: 100%;
+}
+
+body {
+	width: 100%;
+	background-image: url('../img/stardust.png');
+	z-index: 10;
+}
+
+.title {
+	color: #FFF;
+	font-size: 4.8vw;
+	text-align: center;
+	line-height: 1;
+	margin: 10%;
+	padding-top: 7.5%;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+
+}
+
+div img {
+
+	float: left;
+	width: 15%;
+	margin-left: 2em;
+	padding-right: 1.5em;
+	display: inline;
+}
